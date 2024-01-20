@@ -1,0 +1,164 @@
+---
+title: "Pengaruh Ekspor Minyak Mentah Indonesia Terhadap GDP Indonesia Tahun 2013 - 2022"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Irsyad Atmaja Nasution"
+date: 2024-01-20
+number-sections: true
+format:
+  html: default
+  docx: default
+---
+
+![](poltekapp.jpg){width="320"}
+
+## Pendahuluan
+
+### Latar Belakang
+
+Perdagangan Internasional merupakan salah satu aspek penting dalam perekonomian setiap negara di dunia, sehingga mengacu pada pertumbuhan ekonomi suatu negara. Gross Domestic Pruduct (GDP) atau Produk Domestik Bruto (PDB) merupakan indikator makroekonomi yang sampai saat ini yang masih digunakan untuk mengukur kinerja perekonomian di suatu negara. Interaksi ekonomi antar negara menjadi faktor utama dalam pertumbuhan ekonomi suatu negara.
+
+Alkadri (2000) dan Tumovsky (2000), mendefinisikan pertumbuhan ekonomi sebagai besarnya persentase perubahan pada indikator Produk Domestik Bruto (PDB). Ekspor merupakan komponen utama untuk pertumbuhan ekonomi di suatu negara, dimana suatu negara dapat memperoleh keuntungan dan pendapatan nasional. Transaksi internasional terjadi ketika suatu negara memiliki kelebihan produksi dalam negeri kemudian negara tersebut akan melakukan ekspor ke negara lain.
+
+Menurut Bank Indonesia (BI), neraca pembayaran merupakan catatan sebagai catatan transaksi ekonomi antara penduduk Indonesia dengan non-residen dalam suaru periode tertentu. Surplus neraca pembayaran terjadi jika suatu negara memiliki kelebihan nilai ekspor dan investasi dibandingkan kewajiban yang dibayarkan negara lain. Dimana kondisi neraca pembayaran defisit terjadi saat impor lebih besar dibandingkan ekspor, neraca pembayaran surplus berdampak pada pertumbuhan ekonomi suatu negara.
+
+Minyak mentah berkontribusi cukup besar terhadap total nilai ekspor migas di Indonesia, perkembangan ekspor impor minyak mentah di Indonesia setiap tahunnya mengalami fluktuasi, adapun beberapa faktor ekonomi juga dapat mempengaruhi besarnya nilai ekspor minyak bumi mentah. Faktor ini antara lain, tingkat kurs, jumlah PDB, dan tingkat fluktuasi dari kurs karena mempengaruhi jumlah permintaan atau kuantitas minyak mentah yang diminta oleh importir, dan juga tingkat inflasi. Tingkat inflasi karena indikasi kenaikan harga barang, jika laju inflasi semakin tinggi akan berdampak pada penurunan nilai ekspor. Industri minyak dan gas diputuskan pemerintah sebagai industri yang tepat, menurut EIA (2011) negara Indonesia merupakan negara eksportir gas alam terbesar ke-8. Penelitian ini dimaksudkan apakah nilai ekspor minyak mentah Indonesia berpengaruh terhadap GDP Indonesia.
+
+### Ruang Lingkup
+
+Penelitian ini meneliti dan menganalisa pengaruh ekspor minyak mentah Indonesia terhadap GDP Indonesia pada periode 10 tahun terakhir yaitu pada tahun 2013 sampai dengan tahun 2022. Ruang lingkup penelitian ini adalah pada variabel - variabel yang berkaitan dengan judul penelitian yaitu ekspor dan GDP.
+
+### Rumusan Masalah
+
+1.  Apakah nilai ekspor minyak mentah Indonesia berpengaruh pada GDP Indonesia?
+2.  Seberapa besar pengaruh nilai ekspor minyak mentah di Indonesia terhadap GDP Indonesia tahun 2013 - 2022?
+
+### Tujuan dan Manfaat Penelitian
+
+**Tujuan** **Penelitian**
+
+Penelitian ini bertujuan untuk melihat bagaimana pengaruh nilai ekspor komoditas minyak mentah di Indonesia terhadap GDP Indonesia dalam periode 10 tahun terakhir serta mengevaluasi bagaimana keunggulan nilai ekspor minyak mentah Indonesia terhadap GDP Indonesia periode tahun 2013 - 2022.
+
+**Manfaat Penelitian**
+
+1.  **Meningkatkan pemahaman tentang hubungan antara ekspor minyak mentah dan GDP Indonesia.** Penelitian ini dapat memberikan gambaran yang lebih jelas tentang bagaimana ekspor minyak mentah mempengaruhi GDP Indonesia, baik secara langsung maupun tidak langsung.
+
+2.  **Meningkatkan pemahaman tentang ekonomi makro.** Penelitian ini dapat memberikan gambaran yang lebih jelas tentang bagaimana faktor-faktor makroekonomi, seperti ekspor minyak mentah, dapat mempengaruhi pertumbuhan ekonomi.
+
+3.  **Meningkatkan pertumbuhan ekonomi yang berkelanjutan.** Peningkatan ekspor minyak mentah dapat membantu Indonesia untuk mencapai pertumbuhan ekonomi yang berkelanjutan.
+
+### Package
+
+Packages yang digunakan dalam penelitian ini, antara lain:
+
+```{r}
+library(readxl)
+library(tidyverse)
+```
+
+## Studi Pustaka
+
+**Ekspor** Ekspor merupakan salah satu unsur yang dapat meningkatkan pertumbuhan ekonomi. Sistematis ekspor merupakan penjualan barang ke luar negeri dengan menggunakan sistem pembayaran, kualitas, kuantitas dan syarat penjualan lain yang telah disetujui oleh pihak eksportir dan importir berupa negosiasi atau membuat kontrak dari kedua pihak yaitu importir dan eksportir. Proses ekspor pada umumnya merupakan tindakan untuk mengeluarkan barang/komoditas dari dalam negeri untuk memasukannya ke negara lain. Ekspor barang secara besar umumnya membutuhkan campur tangan bea cukai negara pengirim maupun penerima.
+
+Menurut (Amir, 2013), Ekspor adalah upaya melakukan penjualan komoditas yang kita miliki kepada bangsa lain atau Negara asing, dengan mengharapkan pembayaran dalam valuta asing, serta melakukan komoditi dengan memakai bahasa asing. Menurut (Marolop, 2011), Ekspor adalah pengeluaran barang dari daerah pabeanan indonesia untuk dikirim ke luar negeri dengan mengikuti ketentuan yang berlaku terutama mengenai peraturan kepabeanan.
+
+Aktifitas ekspor minyak mentah ini membantu pemerintah memperoleh pendapatan dan meningkatkan pertumbuhan ekonomi suatu negara. Semakin banyak ekspor minyak mentah maka devisa negara tersebut bertambah dan nilai tukar uang luar negeri pun tidak stabil, maka dari itu ekspor menyebabkan suatu negara mendapat mata uang asing dan sebaliknya impor harus dibayar dengan mata uang asing. Transaksi tersebut akan di catat oleh Bank Sentral dan nilainya ditunjukan dalam neraca pembayaran. Dapat di artikan bahwa apabila suatu negara ekspornya lebih besar di banding impornya maka Negara tersebut akan terjadi peningkatan pertumbuhan ekonomi.
+
+**Minyak Mentah** Minyak mentah Indonesia adalah salah satu sumber daya alam utama negara ini, Indonesia memiliki potensi yang besar untuk menjadi produsen minyak mentah dunia. Hal ini karena Indonesia memiliki cadangan minyak mentah yang cukup besar, yaitu sekitar 3,5 miliar barel memiliki sejumlah ladang minyak yang tersebar di berbagai wilayah, terutama di Pulau Sumatera, Kalimantan, dan Papua. Pengaruh ekspor minyak mentah terhadap GDP (Gross Domestic Product) Indonesia dari tahun 2013 hingga 2022 merupakan topik yang kompleks dan melibatkan berbagai faktor ekonomi.
+
+## Metode Penelitian
+
+### Data
+
+| Tahun | Nilai Ekspor (US\$) | GDP Indonesia (US\$) |
+|-------|---------------------|----------------------|
+| 2013  | 10204000000         | 912524136718         |
+| 2014  | 9215000000          | 890814755533         |
+| 2015  | 6479000000          | 860854232686         |
+| 2016  | 5196000000          | 931877364037         |
+| 2017  | 5354000000          | 1015618744159        |
+| 2018  | 5151000000          | 1042271532988        |
+| 2019  | 1726000000          | 1119099871350        |
+| 2020  | 1396000000          | 1059054842698        |
+| 2021  | 2795000000          | 1186505455736        |
+| 2022  | 1615000000          | 1319100220407        |
+
+Penelitian ini menggunakan data nilai ekspor Minyak Mentah tahun 2013 - 2022 dari Badan Pusat Statistika (BPS) dan GDP Indonesia menggunakan data dari Worldbank.
+
+```{r}
+library(readxl)
+Data_Irsyad<-read_excel("C:/Data Irsyad/UAS/Data Irsyad.xlsx")
+head(Data_Irsyad)
+library("ggplot2")
+library("readxl")
+library("dplyr")
+ggplot(data=Data_Irsyad,aes(x=NilaiEkspor,y=GDP)) +
+  geom_point(color="blue",size=2) + # setiap nambah command, selalu kasih tanda +
+  labs(title="tabel 1. Hubungan Antara Nilai Ekspor Minyak Mentah terhadap GDP Indonesia",
+       x="Nilai Ekspor Minyak Mentah",
+       y="GDP Indonesia",
+       caption = "sumber: Worldbank , BPS") +
+  theme_classic()
+```
+
+### Metode Analisis
+
+Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini bermaksud mencari hubungan antara nilai ekspor minyak mentah dan GDP Indonesia. Spesifikasi yang dilakukan adalah:
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah nilai ekspor minyak mentah dan $x_t$ adalah GDP Indonesia.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+Dikarenakan penelitian ini menggunakan OLS, pembahasan disini merupakan menghubungkan Nilai Ekspor Minyak Mentah (NilaiEkspor) dan GDP Indonesia (GDP) pada tahun 2013 - 2022, yang dimana dari kedua data tersebut disatukan untuk regresi, berikut adalah tampilannnya:
+
+```{r}
+#import dataset
+library(readxl)
+Data_Irsyad<-read_excel("C:/Data Irsyad/UAS/Data Irsyad.xlsx")
+head(Data_Irsyad)
+```
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+dat<-read_excel("C:/Data Irsyad/UAS/Data Irsyad.xlsx")
+reg<-lm(data = dat,GDP~NilaiEkspor)
+summary(reg)
+
+```
+
+Dapat dilihat dari regresinya dapat dimasukkan ke dalam model adalah menjadi sebgai berikut :
+
+$$
+y_{t}= 1.213e+12 + -3.656e+07 +\mu_t
+$$
+
+Dapat dijelaskan bahwa :
+
+1.  Konstanta ???? adalah sebesar 1.213e+12 menunjukan konstanta GDP (Y).
+2.  Koefisien regresi nilai ekspor (X) minyak mentah menunjukan sebesar -3.656e+07, menyatakan adanya hubungan yang negatif sehingga menunjukan hubungan yang tidak searah, dapat diartikan bahwa nilai ekspor minyak mentah turun dan GDP menunjukan nilai naik.
+
+## Kesimpulan
+
+Berdasarkan hasil analisis regresi tersebut, dapat kita simpulkan bahwa terdapat hubungan negatif yang signifikan secara statistik antara GDP dan Nilai Ekspor, dimana ketika Nilai Ekspor meningkat, GDP cenderung menurun. R-squared menunjukan nilai 0.6184 artinya 61.84% variasi dalam GDP dapat dijelaskan oleh variasi dalam Nilai Ekspor, nilai ini cukup tinggi, tetapi masih menyisakan ruang untuk faktor lain yang mempengaruhi GDP.
+
+Koefisien regresi dari penelitian ini sebesar -3.656e+01 untuk variabel independen (NilaiEkspor) menunjukkan bahwa setiap kenaikan Nilai Ekspor sebesar 1 unit dikaitkan dengan penurunan GDP sebesar 36.56 unit. Sementara itu hasil dari p-value dari regresi tersebut menunjukan P-value 0.00698 (kurang dari 0.05) menunjukkan bahwa hubungan antara GDP dan Nilai Ekspor tidak terjadi secara kebetulan. Hubungan antara kedua variabel yang disebut hubungan negatif signifikan secara statistik.
+
+## Referensi
+
+World Bank. (2023, January 24). GDP (current US\$). Indonesia. Retrieved from The World Bank: https://databank.worldbank.org/reports.aspx?source=2&series=NY.GDP.MKTP.CD&country=IDN
+
+Badan Pusat Statistik Indonesia. (8 September 2014). Nilai Ekspor dan Impor Migas (juta US\$) 1996-2022. Diakses pada 19 Januari 2024, dari https://www.bps.go.id/id/statistics-table/1/MTAwNCMx/nilai-ekspor-dan-impor-migas\--juta-us\-\--1996-2022.html
+
+M. Helmi Firmansyah, I Gusti Bagus Indrajaya. (2021). PENGARUH EKSPOR MINYAK BUMI MENTAH DAN IMPOR PRODUK MINYAK BUMI OLAHAN TERHADAP PERTUMBUHAN EKONOMI INDONESIA, 2278. https://ojs.unud.ac.id/index.php/eep/article/download/75925/45179/
+
+Fadila Azra, Murtala. (2021). PENGARUH EKSPOR HASIL MINYAK DAN IMPOR MINYAK BUMI TERHADAP PERTUMBUHAN EKONOMI DI INDONESIA, 23-25. https://ojs.unimal.ac.id/ekonomika/article/download/4506/2474
+
+Rahma Nurjanah, Adi Bhakti. (Juni 2020). Analisis determinan ekspor minyak mentah Indonesia, 51-52. https://repository.unja.ac.id/17542/1/9219-Article%20Text-32968-1-10-20210312.pdf
+
+Fahrizal Yazid, Aris Soelistyo, Hendra Kusuma. (Agustus 2020). ANALISIS PENAWARAN EKSPOR MINYAK BUMI MENTAH INDONESIA PADA PASAR GLOBAL TAHUN 2009-2018, 472. https://ejournal.umm.ac.id/index.php/jie/article/view/12757
